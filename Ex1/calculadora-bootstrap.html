@@ -14,7 +14,7 @@
     <div class="container">
         <h1>Calculadora Simples</h1>
 
-        <form id="calculo">
+        <form onsubmit="return false;">
 
             <div class="row g-3 align-items-center">
                 <div class="col-auto">
@@ -33,9 +33,12 @@
                 <div class="col-auto">
                     <input type="number" id="inputNumero2" class="form-control">
                 </div>
-            </div>            
+                
+            </div>
 
-            <button class="btn btn-outline-primary">Calcular</button>
+            <button class="btn btn-outline-primary" onclick="calcular()">Calcular</button>
+            <span id="resultado"></span>
+            
         </form>
     </div>
 
